@@ -97,6 +97,8 @@ function buildCharts(sample) {
     // 9. Create the layout for the bar chart.
     var barLayout = {
       title: "Top 10 Bacteria Found",
+      aper_bgcolor: "green",
+      font: { color: "darkblue", family: "Arial" }
     };
 
     // 10. Use Plotly to plot the data with the layout.
