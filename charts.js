@@ -132,16 +132,6 @@ function buildCharts(sample) {
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 
-    //     // Create the buildChart function.
-    // function buildCharts(sample) {
-    //   // Use d3.json to load the samples.json file
-    //   d3.json("samples.json").then((data) => {
-    //     console.log(data);
-
-    // Create a variable that holds the samples array.
-
-    // Create a variable that filters the samples for the object with the desired sample number.
-
     // 1. Create a variable that filters the metadata array for the object with the desired sample number.
     var metadata = data.metadata;
 
@@ -175,7 +165,7 @@ function buildCharts(sample) {
         gauge: {
           axis: { range: [null, 10], tickwidth: 1, tickcolor: "darkblue" },
           bar: { color: "darkblue" },
-          bgcolor: "white",
+          bgcolor: "Blue",
           borderwidth: 2,
           bordercolor: "gray",
           steps: [
