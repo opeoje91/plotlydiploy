@@ -96,7 +96,7 @@ function buildCharts(sample) {
 
     // 9. Create the layout for the bar chart.
     var barLayout = {
-      title: "Top 10 Bacteria Found",
+      title: "Top 10 Bacteria Cultures Found",
       aper_bgcolor: "green",
       font: { color: "darkblue", family: "Arial" }
     };
@@ -171,7 +171,7 @@ function buildCharts(sample) {
         type: "indicator",
         mode: "gauge+number",
         value: washFreq,
-        title: { text: "Guage Chart" },
+        title: { text: "Belly Button Washing Frequency" },
         gauge: {
           axis: { range: [null, 10], tickwidth: 1, tickcolor: "darkblue" },
           bar: { color: "darkblue" },
