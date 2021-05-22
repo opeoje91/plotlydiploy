@@ -109,11 +109,13 @@ function buildCharts(sample) {
         text: otuLabels,
         mode: "markers",
         marker: {
-          // color: 'rgb(93, 164, 214)', //'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+          color: otuIds,
+          opacity: [0.6, 0.7, 0.8, 0.9],
           size: otuIds,
           sizeref: 2,
           sizemode: "area",
         },
+        type: 'scatter'
       },
     ];
     // 2. Create the layout for the bubble chart.
@@ -164,37 +166,37 @@ function buildCharts(sample) {
     // 4. Create the trace for the gauge chart.
     var gaugeData = [
       {
-        domain: { x: [0, 1], y: [0, 1] },
-        value: washFreq,
-        title: { text: "Guage Chart" },
         type: "indicator",
         mode: "gauge+number",
-        delta: { reference: 2, increasing: { color: "RebeccaPurple" } },
-        // guage: {
-        //   // axis: { range: [0, 10], tickwidth: 1, tickcolor: "black" },
-        //   bar: { color: "darkblue" },
-        //   bgcolor: "white",
-        //   borderwidth: 2,
-        //   bordercolor: "gray",
-        //   steps: [
-        //     { range: [0, 5], color: "red" },
-        //     { range: [5, 10], color: "orange" },
-        //     // { range: [4, 6], color: "yellow" },
-        //     // { range: [6, 8], color: "aquamarin" },
-        //     // { range: [8, 10], color: "green" },
-        //   ],
-        // },
-      },
+        value: washFreq,
+        title: { text: "Guage Chart" },
+        gauge: {
+          axis: { range: [null, 10], tickwidth: 1, tickcolor: "darkblue" },
+          bar: { color: "darkblue" },
+          bgcolor: "white",
+          borderwidth: 2,
+          bordercolor: "gray",
+          steps: [
+            { range: [0, 2], color: "red" },
+            { range: [2, 4], color: "orange" },
+            { range: [4, 6], color: "yellow" },
+            { range: [6, 8], color: "purple" },
+            { range: [8, 10], color: "green" },
+          ],
+        },
+      }
     ];
 
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = {
-      width: 600,
-      height: 500,
-      margin: { t: 0, b: 0 },
+      width: 500,
+      height: 400,
+      margin: { t: 25, r: 25, l: 25, b: 25 },
+      font: { color: "darkblue", family: "Arial" }
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge", gaugeData, gaugeLayout);
+
   });
 }
