@@ -127,7 +127,7 @@ function buildCharts(sample) {
       xaxis: { title: "OTU ID" },
       hovermode: "otu_labels",
       showlegend: false,
-      paper_bgcolor: "green",
+      paper_bgcolor: "gray",
       font: { color: "red", family: "Arial" }
       // height: 600,
       // width: 600
