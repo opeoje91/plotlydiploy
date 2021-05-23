@@ -97,7 +97,7 @@ function buildCharts(sample) {
     // 9. Create the layout for the bar chart.
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
-      aper_bgcolor: "green",
+      paper_bgcolor: "green",
       font: { color: "pink", family: "Arial" }
       
     };
@@ -185,7 +185,7 @@ function buildCharts(sample) {
       width: 500,
       height: 400,
       margin: { t: 25, r: 25, l: 25, b: 25 },
-      aper_bgcolor: "lavender",
+      paper_bgcolor: "lavender",
      font: { color: "darkblue", family: "Arial" }
     };
 
