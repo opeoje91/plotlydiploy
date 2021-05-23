@@ -98,7 +98,8 @@ function buildCharts(sample) {
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
       aper_bgcolor: "green",
-      font: { color: "darkblue", family: "Arial" }
+      font: { color: "pink", family: "Arial" }
+      
     };
 
     // 10. Use Plotly to plot the data with the layout.
