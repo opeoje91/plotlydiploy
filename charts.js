@@ -186,7 +186,7 @@ function buildCharts(sample) {
       height: 400,
       margin: { t: 25, r: 25, l: 25, b: 25 },
       paper_bgcolor: "lavender",
-     font: { color: "darkblue", family: "Arial" }
+     font: { color: "darkblue", family: "Italics" }
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
